@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +19,31 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${inter.className} bg-[#47585c] text-[#c8d5bb] relative`}
+      >
+        {children}
+        <svg
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-20"
+          width="100%"
+          height="100%"
+        >
+          <defs>
+            <filter id="noise">
+              <feTurbulence
+                type="fractalNoise"
+                result="turbulence"
+                baseFrequency="0.8"
+                numOctaves="4"
+                seed="10"
+                stitchTiles="stitch"
+              />
+            </filter>
+          </defs>
+          <rect width="100%" height="100%" filter="url(#noise)" />
+        </svg>
+      </body>
     </html>
   );
 }
