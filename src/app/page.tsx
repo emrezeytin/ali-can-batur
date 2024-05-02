@@ -1,3 +1,5 @@
+import { ResponsiveDialog } from "@/components/dialog-button";
+
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen gap-24 px-4 py-48">
@@ -5,19 +7,13 @@ export default function Home() {
         <p className="text-3xl font-medium leading-snug">
           Ali Can Batur is a passionate DevRel and seasoned iOS developer with
           over a decade of{" "}
-          <span className="cursor-pointer relative inline-block font-extrabold pb-1 hover:text-[#47585c] transition-colors duration-200 after:content-[''] after:block after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-[#c8d5bb] after:transition-all after:duration-200 after:ease-in-out hover:after:h-full after:z-[-1]">
-            experience
-          </span>{" "}
-          in building robust mobile applications and nurturing developer
+          <ResponsiveDialog word="experience">testing</ResponsiveDialog> in
+          building robust mobile applications and nurturing developer
           communities. Ali Can thrives on helping other developers grow and
           sharing his extensive knowledge through public{" "}
-          <span className="cursor-pointer relative inline-block font-extrabold pb-1 hover:text-[#47585c] transition-colors duration-200 after:content-[''] after:block after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-[#c8d5bb] after:transition-all after:duration-200 after:ease-in-out hover:after:h-full after:z-[-1]">
-            speaking
-          </span>{" "}
-          and technical{" "}
-          <span className="cursor-pointer relative inline-block font-extrabold pb-1 hover:text-[#47585c] transition-colors duration-200 after:content-[''] after:block after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-[#c8d5bb] after:transition-all after:duration-200 after:ease-in-out hover:after:h-full after:z-[-1]">
-            podcasts.
-          </span>
+          <ResponsiveDialog word="speaking">testing 2</ResponsiveDialog> and
+          technical{" "}
+          <ResponsiveDialog word="podcasts">testing 3</ResponsiveDialog>.
         </p>
       </div>
       {/* <div className="container max-w-screen-lg mx-auto">
