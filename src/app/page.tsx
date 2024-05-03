@@ -4,12 +4,17 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen gap-24 px-4 py-48">
       <div className="container max-w-screen-lg mx-auto">
+        <div className="mb-4">
+          <h1 className="text-xl font-bold">Ali Can Batur</h1>
+          <p className="font-medium text-3lg">DevRel and iOS Developer</p>
+        </div>
+
         <p className="text-3xl font-medium leading-snug">
-          Ali Can Batur is a passionate DevRel and seasoned iOS developer with
+          I am a passionate DevRel and seasoned iOS developer with
           over a decade of{" "}
           <ResponsiveDialog word="experience">testing</ResponsiveDialog> in
           building robust mobile applications and nurturing developer
-          communities. Ali Can thrives on helping other developers grow and
+          communities. I thrive on helping other developers grow and
           sharing his extensive knowledge through public{" "}
           <ResponsiveDialog word="speaking">testing 2</ResponsiveDialog> and
           technical{" "}
@@ -70,13 +75,13 @@ export default function Home() {
         </ul>
       </div> */}
       <div className="container max-w-screen-lg mx-auto">
-        <h2 className="mb-2 text-2xl font-semibold">Newsletter</h2>
-        <p className="mb-4 text-base">
+        <h2 className="mb-2 text-3xl font-medium leading-snug">Newsletter</h2>
+        <p className="mb-4 text-lg leading-normal max-w-prose">
           Subscribe to our newsletter to stay up-to-date with the latest
           development news and events. We&apos;ll send you regular updates on
           our work and events.
         </p>
-        <form className="flex w-full gap-2">
+        <form className="flex w-full gap-2 max-w-prose">
           <input
             type="email"
             name="email"

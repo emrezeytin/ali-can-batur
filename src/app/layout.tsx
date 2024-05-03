@@ -25,7 +25,7 @@ export default function RootLayout({
         {children}
         <svg
           aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-20"
+          className="absolute inset-0 pointer-events-none opacity-30"
           width="100%"
           height="100%"
         >
